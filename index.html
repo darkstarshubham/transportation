@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TRANSPORTTION PAGE</title>
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">THAKUR TRANSPORTATION</h2>
+        <div class="toggle"></div>
+      </header>
+
+      <video src="transport.mp4" muted loop autoplay></video>
+      <div class="overlay">
+        <div class="text">
+          <h2>LET US KNOW WHEN YOU NEED US!</h2>
+          <h4>TRANSPORTATION ALL OVER THE INDIA</h4>
+          <p>
+            we here to provide you a transport service , your laguages and your
+            equipments can be easily moved from your initial location to the
+            destiny wherever you want
+          </p>
+          <a href="#">Explore</a>
+        </div>
+        <ul class="social">
+          <li>
+            <a href="#"><img src="facebook.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="instagram.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="twitter.png" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Updates</a></li>
+        <li><a href="#">Vehicle Type</a></li>
+      </ul>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
